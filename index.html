@@ -20,9 +20,14 @@
     <li><a href="#">Host</a></li>
   </ul>
 
-<button class="hidden lg:block px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-600">
-  Subscribe ->
+<button class="hidden lg:flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-600
+               transform transition duration-300 ease-in-out
+               hover:scale-105 hover:shadow-lg hover:brightness-110">
+  Subscribe
+  <img src="ArrowRight.png" class="w-4 h-4" alt="Arrow">
 </button>
+
+
 
 <!-- Mobile Menu Button -->
   <button id="mobile-menu-btn" class="lg:hidden">
@@ -52,8 +57,6 @@
   <img src="microphone.png" alt="Podcast Icon" class="w-20 h-20 object-contain">
 </div>
 
-
-    <!-- Text -->
     <h2 class="text-4xl md:text-5xl font-bold mb-4">
       TechWave
     </h2>
@@ -63,18 +66,26 @@
     </p>
 
     <!-- Buttons -->
-    <div class="flex justify-center gap-4 flex-wrap">
+<div class="flex justify-center gap-4 flex-wrap">
 
-      <button class="flex items-center gap-2 px-6 py-3 rounded-full bg-pink-600">
-        <img src="spotify.png" class="w-5 h-5">
-        Listen on Spotify
-      </button>
+  <!-- Spotify Button -->
+  <button class="flex items-center gap-2 px-6 py-3 rounded-full bg-pink-600
+                 transform transition duration-300 ease-in-out
+                 hover:scale-105 hover:shadow-lg hover:brightness-110">
+    <img src="spotify.png" class="w-5 h-5">
+    Listen on Spotify
+  </button>
 
-      <button class="flex items-center gap-2 px-6 py-3 rounded-full border border-green-400 text-green-400">
-        <img src="message.png"> Subscribe
-      </button>
+  <!-- Subscribe Button -->
+  <button class="flex items-center gap-2 px-6 py-3 rounded-full border border-green-400 text-green-400
+                 transform transition duration-300 ease-in-out
+                 hover:scale-105 hover:shadow-lg hover:bg-green-400 hover:text-white">
+    <img src="message.png" class="w-5 h-5">
+    Subscribe
+  </button>
 
-    </div>
+</div>
+
 
   </div>
 </section>
@@ -268,8 +279,12 @@
 
 <!-- HOST SECTION -->
 <section class="py-16 px-6">
-  <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">Meet The Host</h3>
+  <!-- Section Title -->
+  <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">
+    Meet The Host
+  </h3>
 
+  <!-- Host Card -->
   <div class="max-w-4xl mx-auto bg-[#24003a] p-6 rounded-lg flex flex-col md:flex-row items-center gap-6">
     
     <!-- Host Image -->
@@ -279,9 +294,7 @@
     <div>
       <h4 class="text-2xl font-bold">Alex Kumar</h4>
       <p class="text-gray-400 mt-2">
-        Tech entrepreneur, productivity expert, and lifelong learner. 
-        Alex has been in the tech industry for over 10 years, 
-        working with startups and Fortune 500 companies.
+        Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies.
       </p>
 
       <!-- Social Icons -->
@@ -301,28 +314,35 @@
       </div>
 
     </div>
+
+    
   </div>
 </section>
 
 
+
 <!-- FOOTER -->
-<footer class="text-center text-400 py-20 h-[350px]" 
-        style="background-image: url('footer-bg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-  
-  <h1 class="text-6xl font-bold">
-    Tech<span class="text-fuchsia-600">Wave</span>
-  </h1>
+<footer class="relative text-center text-white py-20 px-4 h-auto 
+               bg-no-repeat bg-center bg-contain sm:bg-cover"
+        style="background-image: url('footer-bg.png');">
 
-  <div class="flex items-center justify-center gap-4 mb-4">
-    <div class="flex gap-3">
-      <img src="spotify.png" class="w-5 h-5" alt="Spotify">Spotify
-      <img src="apple-podcast.png" class="w-5 h-5" alt="Apple Podcasts">Apple Podcasts
-      <img src="youtube-podcast.png" class="w-5 h-5" alt="YouTube">YouTube
-      <img src="twitter.png" class="w-5 h-5" alt="Twitter">Twitter
-    </div>
+  <!-- Heading -->
+ <h1 class="text-6xl font-bold">
+  Tech<span class="text-fuchsia-600">Wave</span>
+</h1>
+
+<div class="flex items-center justify-center gap-4 mt-8 flex-wrap">
+  <div class="flex gap-3 flex-wrap justify-center">
+    <img src="spotify.png" class="w-5 h-5 inline-block" alt="Spotify">Spotify
+    <img src="apple-podcast.png" class="w-5 h-5 inline-block" alt="Apple Podcasts">Apple Podcasts
+    <img src="youtube-podcast.png" class="w-5 h-5 inline-block" alt="YouTube">YouTube
+    <img src="twitter.png" class="w-5 h-5 inline-block" alt="Twitter">Twitter
   </div>
+</div>
 
-  <p class="text-xs">© 2026 TechWave Podcast. All rights reserved.</p>
+
+  <!-- Copyright -->
+  <p class="text-xs sm:text-sm">© 2026 TechWave Podcast. All rights reserved.</p>
 
 </footer>
 
